@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(135deg, #1E90FF, #00CED1);
+    color: white;
+    animation: gradientBG 5s infinite alternate;
+}
+@keyframes gradientBG {
+    0% { background: linear-gradient(135deg, #1E90FF, #00CED1); }
+    100% { background: linear-gradient(135deg, #00CED1, #1E90FF); }
+}
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1.5s forwards;
+}
+.profile-pic {
+    width: 120px;  /* पहले 150px था, अब छोटा कर दिया */
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #FFD700;
+    transition: transform 0.5s;
+}
+h1 {
+    font-size: 2.2em;  /* पहले 2em था, अब बड़ा किया */
+}
+p {
+    font-size: 1.2em;  /* पहले 1em था, अब readable बनाया */
+}
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.skill {
+    margin: 10px 0;
+    text-align: left;
+}
+.progress-bar {
+    background: rgba(255, 255, 255, 0.3);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background: #FFD700;
+    transition: width 1s ease-in-out;
+}
+#contact a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#contact a:hover {
+    color: #FFA500;
+}
+.skill-container {
+    margin-top: 20px;
+}
+.skill {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.skill span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.progress-bar {
+    background-color: #4CAF50; /* Green Bar */
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    margin-bottom: 5px;
+}
+.btn-link {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; /* Blue button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.slide-in {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+nav {
+    top: 10px;
+    left: 0%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav button {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+nav button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
